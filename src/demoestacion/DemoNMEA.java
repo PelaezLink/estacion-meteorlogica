@@ -25,6 +25,10 @@ public class DemoNMEA extends Application {
         Scene scene = new Scene(root);
   
         stage.setScene(scene);
+        stage.setMinHeight(480);
+        stage.setMinWidth(800);
+        stage.setMaxHeight(480);
+        stage.setMaxWidth(800);
         stage.show();
         stage.setOnCloseRequest(e->{
             System.exit(0);
