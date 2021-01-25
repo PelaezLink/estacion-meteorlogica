@@ -110,7 +110,7 @@
                      <graphic>
                         <ImageView fitHeight="46.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../imagenes/graficaC.png" />
+                              <Image url="@../imagenes/graficaN.png" />
                            </image>
                         </ImageView>
                      </graphic></Button>
@@ -124,7 +124,11 @@
                      </graphic></Button>
                   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="4">
                      <graphic>
-                        <ImageView fitHeight="61.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="42.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/equis.png" />
+                           </image>
+                        </ImageView>
                      </graphic>
                   </Button>
                </children>
