@@ -79,7 +79,7 @@ public class FXMLDocumentController implements Initializable {
             });
         });
         model.TEMPProperty().addListener((a, b, c) -> {
-            String dat = String.valueOf(c) + " ºcelsius";
+            String dat = String.valueOf(c) + " ºC";
             Platform.runLater(() -> {
                 tempLabel.setText(dat);
             });
