@@ -55,7 +55,15 @@ public class FXMLDocumentController implements Initializable {
 
     private Model model;
     @FXML
-    private Button button1;
+    private Button cargar;
+    @FXML
+    private Button graficas;
+    @FXML
+    private Button puerto;
+    @FXML
+    private Button modo;
+    @FXML
+    private Button apagar;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -111,6 +119,11 @@ public class FXMLDocumentController implements Initializable {
             // se pone en marcha el proceso para recibir tramas
             model.addSentenceReader(ficheroNMEA);
         }
+    }
+
+    @FXML
+    private void apagarApp(ActionEvent event) {
+        System.exit(0);
     }
 }
 

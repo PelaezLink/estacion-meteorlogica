@@ -30,7 +30,7 @@ public class DemoNMEA extends Application {
         stage.setMinWidth(800);
         stage.setMaxHeight(480);
         stage.setMaxWidth(800);
-        stage.initStyle(StageStyle.UTILITY); //hace que no aparezcan minimizar y maximizar
+        stage.initStyle(StageStyle.UNDECORATED); //hace que no aparezca barra arriba
         stage.show();
         stage.setOnCloseRequest(e->{
             System.exit(0);
