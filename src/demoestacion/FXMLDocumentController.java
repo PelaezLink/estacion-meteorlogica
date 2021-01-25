@@ -43,8 +43,6 @@ import net.sf.marineapi.nmea.util.Position;
 public class FXMLDocumentController implements Initializable {
 
     @FXML
-    private Button button;
-    @FXML
     private Label ficheroLabel;
     @FXML
     private Label twdLabel;
@@ -56,6 +54,8 @@ public class FXMLDocumentController implements Initializable {
     private Label tempLabel;
 
     private Model model;
+    @FXML
+    private Button button1;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -89,7 +89,6 @@ public class FXMLDocumentController implements Initializable {
                 twsLabel.setText(dat);
             });
         });
-
     }
 
     @FXML
