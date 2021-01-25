@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -29,6 +30,7 @@ public class DemoNMEA extends Application {
         stage.setMinWidth(800);
         stage.setMaxHeight(480);
         stage.setMaxWidth(800);
+        stage.initStyle(StageStyle.UTILITY); //hace que no aparezcan minimizar y maximizar
         stage.show();
         stage.setOnCloseRequest(e->{
             System.exit(0);
