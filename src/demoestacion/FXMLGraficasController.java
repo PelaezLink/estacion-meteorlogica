@@ -45,7 +45,6 @@ public class FXMLGraficasController implements Initializable {
             public void changed(ObservableValue<? extends Number> ov,
                     Number old_val, Number new_val) {
                 model.setSizeWindChart(new_val.intValue() * 60);
-                System.out.println(new_val.intValue() * 60);
                 
             }
         });
