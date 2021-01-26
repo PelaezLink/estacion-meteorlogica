@@ -22,7 +22,7 @@
                   <VBox prefHeight="214.0" prefWidth="426.0" styleClass="temp" stylesheets="@estilosDia.css">
                      <children>
                         <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="356.0" styleClass="nomTemp" stylesheets="@estilosDia.css" text="TEMPERATURA" />
-                        <Label fx:id="tempLabel" prefHeight="197.0" prefWidth="342.0" styleClass="numTemp" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
+                        <Label fx:id="tempLabel" prefHeight="197.0" prefWidth="351.0" styleClass="numTemp" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
                            <font>
                               <Font size="100.0" />
                            </font>
@@ -35,7 +35,7 @@
                      </HBox.margin>
                      <children>
                         <Label alignment="CENTER" prefHeight="17.0" prefWidth="311.0" styleClass="nomDireccion" text="TWD" />
-                        <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="189.0" prefWidth="336.0" styleClass="numDireccion" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
+                        <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="233.0" styleClass="numDireccion" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
                            <font>
                               <Font size="65.0" />
                            </font>
@@ -52,7 +52,7 @@
                   <VBox styleClass="presion" stylesheets="@estilosDia.css" HBox.hgrow="ALWAYS">
                      <children>
                         <Label alignment="CENTER" prefHeight="17.0" prefWidth="281.0" styleClass="nomPresion" stylesheets="@estilosDia.css" text="PRESION BAROMETRICA" />
-                        <Label fx:id="presionLabel" prefHeight="213.0" prefWidth="254.0" styleClass="numPresion" stylesheets="@estilosDia.css" text="---" textFill="#4f0fee">
+                        <Label fx:id="presionLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="158.0" prefWidth="279.0" styleClass="numPresion" stylesheets="@estilosDia.css" text="---" textFill="#4f0fee">
                            <font>
                               <Font size="48.0" />
                            </font>

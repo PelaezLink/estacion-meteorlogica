@@ -19,7 +19,7 @@ and open the template in the editor.
 
 .temp{
     -fx-border-color: grey;
-    -fx-border-width: 2 2 2 2;
+    -fx-border-width: 0 0 0 0;
     -fx-border-radius: 8;
 }
 
@@ -27,36 +27,44 @@ and open the template in the editor.
     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black; 
     -fx-font-weight: bold;
-    -fx-font-size: 110px;   
+    -fx-font-size: 110px;
+    -fx-background-radius: 5;
+    -fx-background-color: linear-gradient(#acf3ff, #ffffff);
+
 }
 .nomTemp{
     -fx-font-family:  "Arial";
     -fx-border-color: grey;
-    -fx-border-width: 0 0 2 0;
+    -fx-border-width: 0 0 0 0;
     -fx-font-weight: bold;
     -fx-font-size: 15px;
+    -fx-font-color: #000000;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
 }
 
 
 
 .presion{
-    -fx-border-color: grey;
-    -fx-border-width: 2 2 2 2;
-    -fx-border-radius: 8;
+
 }
 .numPresion{
      -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 60px;  
+    -fx-font-size: 60px; 
+    -fx-background-radius: 5;
+    -fx-background-color: linear-gradient(#a4ff6b, #ffffff);
 }
 
 .nomPresion{
     -fx-font-family:  "Arial";
     -fx-border-color: grey;
-    -fx-border-width: 0 0 2 0;
+    -fx-border-width: 0 0 0 0;
     -fx-font-weight: bold;
     -fx-font-size: 15px;
+    -fx-background-radius: 5;
+    -fx-background-color: #ffffff;
 }
 
 
@@ -67,61 +75,63 @@ and open the template in the editor.
     -fx-text-fill: black;
     -fx-font-weight: bold;
     -fx-font-size: 45px;
-    -fx-border-color: grey;
-    -fx-border-width: 0 0 2 0; 
+
 }
 
 
 
 
 .direccion{  
-    -fx-border-color: grey;
-    -fx-border-width: 2 2 2 2;
-    -fx-border-radius: 8;
+
 }
 .numDireccion{
     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
     -fx-font-size: 90px;  
+    -fx-background-radius: 5;
+    -fx-background-color: linear-gradient(#fff300, #ffffff);
 }
 
 .nomDireccion{
     -fx-font-family:  "Arial";
-    -fx-border-color: grey;
-    -fx-border-width: 0 0 2 0;
     -fx-font-weight: bold;
-    -fx-font-size: 15px;    
+    -fx-font-size: 15px;   
+    -fx-background-radius: 5;
+    -fx-background-color: #ffffff;
 }
 
 
 
 
 .velocidad{
-    -fx-border-color: grey;
-    -fx-border-width: 2 2 2 2;
-    -fx-border-radius: 8;
+
 }
 
 .numVelocidad{
-        -fx-font-family:  "DS-Digital";
+    -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 90px;   
+    -fx-font-size: 90px;
+    
+    -fx-background-radius: 5;
+    -fx-background-color: linear-gradient(#ff3d3d, #ffffff);
 }
 .nomVelocidad{   
     -fx-font-family:  "Arial";
     -fx-border-color: grey;
-    -fx-border-width: 0 0 2 0;
+    -fx-border-width: 0 0 0 0;
     -fx-font-weight: bold;
-    -fx-font-size: 15px;    
+    -fx-font-size: 15px;   
+    -fx-background-radius: 5;
+    -fx-background-color: #ffffff;
+
 }
 
 
 
 .archivo{      
-    -fx-border-color: grey;
-    -fx-border-width: 0 0 2 0;
+
 }
 
 .botones{
@@ -133,5 +143,6 @@ and open the template in the editor.
 }
 
 .paneFondo{
-
+    -fx-background-color: #EBF5FB;
+    
 }
