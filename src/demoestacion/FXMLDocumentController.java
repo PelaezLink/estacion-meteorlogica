@@ -5,6 +5,7 @@
  */
 package demoestacion;
 //enrique
+
 import model.Model;
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,6 +14,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,12 +27,14 @@ import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.LineChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import net.sf.marineapi.nmea.event.AbstractSentenceListener;
@@ -64,6 +72,12 @@ public class FXMLDocumentController implements Initializable {
     private Button modo;
     @FXML
     private Button apagar;
+    @FXML
+    private Label fecha;
+    @FXML
+    private Label hora;
+    @FXML
+    private BorderPane escenario;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -97,6 +111,28 @@ public class FXMLDocumentController implements Initializable {
                 twsLabel.setText(dat);
             });
         });
+
+        fecha.setText(LocalDate.now().toString());
+        escenario.getStylesheets().add("/demoestacion/estilosDia.css");
+
+        //Codigo para hacer el reloj que se actualiza:
+        //Fuente: https://stackoverflow.com/questions/38566638/javafx-displaying-time-and-refresh-in-every-second/38567319
+        Thread timerThread = new Thread(() -> {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
+            while (true) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                final String time = simpleDateFormat.format(new Date());
+                Platform.runLater(() -> {
+                    hora.setText(time);
+                });
+            }
+        });
+        timerThread.start();
+
     }
 
     @FXML
@@ -114,7 +150,7 @@ public class FXMLDocumentController implements Initializable {
             // ========================================================
             // NO se comprueba que se trata de un fichero de datos NMEA
             // esto es una demos
-            ficheroLabel.setText("fichero: " + ficheroNMEA.getName());
+            ficheroLabel.setText(ficheroNMEA.getName());
             // ========================================================
             // se pone en marcha el proceso para recibir tramas
             model.addSentenceReader(ficheroNMEA);
@@ -125,5 +161,7 @@ public class FXMLDocumentController implements Initializable {
     private void apagarApp(ActionEvent event) {
         System.exit(0);
     }
+
 }
+
 

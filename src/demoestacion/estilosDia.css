@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-ene-2021, 23:52:11
+    Author     : Luis
+*/
+
+@font-face {
+
+    src: url("/fonts/DS-DIGIB.TTF");
+}
+
+.root{
+    -fx-background-color: white;
+}
+
+.temp{
+    -fx-font-family:  "DS-Digital";
+    -fx-text-fill: black; 
+    -fx-font-weight: bold;
+    -fx-font-size: 110px;
+    -fx-border-color: grey;
+    -fx-border-width: 0 3 0 0;
+}
+
+.presion{
+    -fx-font-family:  "DS-Digital";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 70px;
+
+}
+
+.tiempo{
+    -fx-font-family:  "DS-Digital";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 45px;
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 3 0; 
+}
+
+.direccion{  
+    -fx-font-family:  "DS-Digital";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 90px;
+    -fx-border-color: grey;
+    -fx-border-width: 3 3 0 0;
+}
+
+.velocidad{
+    -fx-font-family:  "DS-Digital";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 90px;
+    -fx-border-color: grey;
+    -fx-border-width: 3 0 0 0;
+}
+
+.archivo{      
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 3 0;
+}
+
+
+
+
+

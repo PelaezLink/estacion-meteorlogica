@@ -13,35 +13,38 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="442.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoestacion.FXMLDocumentController">
+<BorderPane fx:id="escenario" prefHeight="442.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoestacion.FXMLDocumentController">
    <center>
-      <VBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="610.0" spacing="64.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="610.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="TOP_CENTER" prefHeight="180.0" prefWidth="606.0">
+            <HBox alignment="TOP_CENTER" prefHeight="275.0" prefWidth="586.0" spacing="35.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Label fx:id="tempLabel" alignment="CENTER" prefHeight="180.0" prefWidth="351.0" text="---º" textFill="#4f0fee">
+                  <Label fx:id="tempLabel" prefHeight="281.0" prefWidth="376.0" styleClass="temp" text="---º" textFill="#4f0fee">
                      <font>
-                        <Font size="90.0" />
+                        <Font size="100.0" />
                      </font>
                   </Label>
-                  <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="193.0" prefWidth="148.0" text="---º" textFill="#4f0fee">
+                  <Label fx:id="presionLabel" prefHeight="213.0" prefWidth="254.0" styleClass="presion" text="---" textFill="#4f0fee" HBox.hgrow="ALWAYS">
                      <font>
-                        <Font size="32.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="twsLabel" alignment="CENTER" prefHeight="185.0" prefWidth="162.0" text="--.-- Kn" textFill="#4f0fee">
-                     <font>
-                        <Font size="32.0" />
+                        <Font size="50.0" />
                      </font>
                   </Label>
                </children>
             </HBox>
-            <Label fx:id="presionLabel" prefHeight="35.0" prefWidth="173.0" text="---" textFill="#4f0fee">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-              <Label fx:id="ficheroLabel" alignment="BOTTOM_LEFT" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="518.0" text="fichero:" />
+            <HBox prefHeight="221.0" prefWidth="586.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="189.0" prefWidth="336.0" styleClass="direccion" text="---º" textFill="#4f0fee">
+                     <font>
+                        <Font size="65.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="twsLabel" alignment="CENTER" prefHeight="237.0" prefWidth="362.0" styleClass="velocidad" text="--.-- Kn" textFill="#4f0fee">
+                     <font>
+                        <Font size="65.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
          <padding>
             <Insets bottom="12.0" left="12.0" right="12.0" />
@@ -109,12 +112,18 @@
                      </graphic>
                   </Button>
                </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
             </GridPane>
          </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
       </VBox>
    </right>
    <top>
-      <GridPane alignment="CENTER" prefHeight="57.0" prefWidth="505.0" BorderPane.alignment="CENTER">
+      <GridPane alignment="CENTER" prefHeight="57.0" prefWidth="672.0" styleClass="barraArriba" BorderPane.alignment="CENTER">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="349.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="349.0" />
@@ -124,17 +133,24 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="228.0" text="25/01/2021" GridPane.columnIndex="2">
+            <Label fx:id="fecha" alignment="CENTER_RIGHT" prefHeight="102.0" prefWidth="222.0" styleClass="tiempo" text="25/01/2021" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS">
                <font>
                   <Font size="41.0" />
                </font>
             </Label>
-            <Label alignment="TOP_RIGHT" prefHeight="59.0" prefWidth="166.0" text="15:30" GridPane.columnIndex="1">
+            <Label fx:id="hora" alignment="CENTER" prefHeight="59.0" prefWidth="223.0" styleClass="tiempo" text="00:00:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
                <font>
                   <Font size="41.0" />
                </font>
             </Label>
+              <Label fx:id="ficheroLabel" alignment="CENTER" minHeight="16" minWidth="69" prefHeight="62.0" prefWidth="219.0" styleClass="archivo" textAlignment="CENTER" GridPane.hgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
          </children>
+         <BorderPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </BorderPane.margin>
       </GridPane>
    </top>
 </BorderPane>
