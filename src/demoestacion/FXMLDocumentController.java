@@ -30,11 +30,18 @@ import javafx.beans.property.StringProperty;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.chart.LineChart;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import net.sf.marineapi.nmea.event.AbstractSentenceListener;
@@ -78,6 +85,13 @@ public class FXMLDocumentController implements Initializable {
     private Label hora;
     @FXML
     private BorderPane escenario;
+    @FXML
+    private VBox centro;
+    private boolean modoGrafica;
+    private Node hijosCentroUno;
+    private Node hijosCentroDos;
+    @FXML
+    private ImageView imagenBoton;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -114,6 +128,7 @@ public class FXMLDocumentController implements Initializable {
 
         fecha.setText(LocalDate.now().toString());
         escenario.getStylesheets().add("/demoestacion/estilosDia.css");
+        modoGrafica = false;
 
         //Codigo para hacer el reloj que se actualiza:
         //Fuente: https://stackoverflow.com/questions/38566638/javafx-displaying-time-and-refresh-in-every-second/38567319
@@ -162,6 +177,47 @@ public class FXMLDocumentController implements Initializable {
         System.exit(0);
     }
 
+    @FXML
+    private void conectarEstacion(ActionEvent event) {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Estación.");
+        alert.setHeaderText("Conecte una estación.");
+        alert.setContentText("Debe conectar una estación al puerto primero para acceder a esta funcionalidad");
+        alert.showAndWait();
+
+    }
+
+    @FXML
+    private void abrirGraficas(ActionEvent event) throws IOException {
+        if(!modoGrafica){
+        hijosCentroUno = centro.getChildren().get(0);
+        hijosCentroDos = centro.getChildren().get(1);
+        centro.getChildren().clear();
+        FXMLLoader FXMLGraficas = new FXMLLoader(getClass().getResource("/demoestacion/FXMLGraficas.fxml"));
+        centro.getChildren().add(FXMLGraficas.load());
+        FXMLGraficasController controladorGraficas = FXMLGraficas.getController();
+        controladorGraficas.setControladorPrincipal(this);
+        Image imagen = new Image("/imagenes/volver.png");
+        imagenBoton.setImage(imagen);
+        }
+        
+        else{
+        centro.getChildren().clear();
+        centro.getChildren().add(hijosCentroUno);
+        centro.getChildren().add(hijosCentroDos);
+        puerto.setDisable(false);
+        cargar.setDisable(false);
+        modoGrafica = false;
+        Image imagen = new Image("/imagenes/graficaN.png");
+        imagenBoton.setImage(imagen);
+        
+        }
+    }
+    
+    public void botonesGrafica(){
+        puerto.setDisable(true);
+        cargar.setDisable(true);
+        modoGrafica = true;
+    }
+
 }
-
-

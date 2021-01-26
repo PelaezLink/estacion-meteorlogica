@@ -27,7 +27,7 @@ and open the template in the editor.
     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black; 
     -fx-font-weight: bold;
-    -fx-font-size: 110px;
+    -fx-font-size: 140px;
     -fx-background-radius: 5;
     -fx-background-color: linear-gradient(#acf3ff, #ffffff);
 
@@ -52,7 +52,7 @@ and open the template in the editor.
      -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 60px; 
+    -fx-font-size: 100px; 
     -fx-background-radius: 5;
     -fx-background-color: linear-gradient(#a4ff6b, #ffffff);
 }
@@ -74,7 +74,7 @@ and open the template in the editor.
     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 45px;
+    -fx-font-size: 50px;
 
 }
 
@@ -112,7 +112,7 @@ and open the template in the editor.
     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 90px;
+    -fx-font-size: 110px;
     
     -fx-background-radius: 5;
     -fx-background-color: linear-gradient(#ff3d3d, #ffffff);

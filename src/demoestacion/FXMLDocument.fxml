@@ -13,16 +13,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="escenario" prefHeight="442.0" prefWidth="700.0" styleClass="paneFondo" stylesheets="@estilosDia.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoestacion.FXMLDocumentController">
+<BorderPane fx:id="escenario" prefHeight="480.0" prefWidth="800.0" styleClass="paneFondo" stylesheets="@estilosDia.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoestacion.FXMLDocumentController">
    <center>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="610.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="centro" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="698.0" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="TOP_CENTER" prefHeight="275.0" prefWidth="586.0" spacing="5.0" VBox.vgrow="ALWAYS">
                <children>
-                  <VBox prefHeight="214.0" prefWidth="426.0" styleClass="temp" stylesheets="@estilosDia.css">
+                  <VBox prefHeight="219.0" prefWidth="507.0" styleClass="temp" stylesheets="@estilosDia.css">
                      <children>
-                        <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="356.0" styleClass="nomTemp" stylesheets="@estilosDia.css" text="TEMPERATURA" />
-                        <Label fx:id="tempLabel" prefHeight="197.0" prefWidth="351.0" styleClass="numTemp" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
+                        <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="463.0" styleClass="nomTemp" stylesheets="@estilosDia.css" text="TEMPERATURA" />
+                        <Label fx:id="tempLabel" alignment="CENTER" prefHeight="197.0" prefWidth="431.0" styleClass="numTemp" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
                            <font>
                               <Font size="100.0" />
                            </font>
@@ -35,7 +35,7 @@
                      </HBox.margin>
                      <children>
                         <Label alignment="CENTER" prefHeight="17.0" prefWidth="311.0" styleClass="nomDireccion" text="TWD" />
-                        <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="233.0" styleClass="numDireccion" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
+                        <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="247.0" styleClass="numDireccion" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
                            <font>
                               <Font size="65.0" />
                            </font>
@@ -51,8 +51,8 @@
                <children>
                   <VBox styleClass="presion" stylesheets="@estilosDia.css" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="281.0" styleClass="nomPresion" stylesheets="@estilosDia.css" text="PRESION BAROMETRICA" />
-                        <Label fx:id="presionLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="158.0" prefWidth="279.0" styleClass="numPresion" stylesheets="@estilosDia.css" text="---" textFill="#4f0fee">
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="364.0" styleClass="nomPresion" stylesheets="@estilosDia.css" text="PRESION BAROMETRICA" />
+                        <Label fx:id="presionLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="158.0" prefWidth="279.0" styleClass="numPresion" stylesheets="@estilosDia.css" text="---" textFill="#4f0fee">
                            <font>
                               <Font size="48.0" />
                            </font>
@@ -113,16 +113,16 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="graficas" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="1">
+                  <Button fx:id="graficas" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#abrirGraficas" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="1">
                      <graphic>
-                        <ImageView fitHeight="46.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imagenBoton" fitHeight="46.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../imagenes/graficaN.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="puerto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="2">
+                  <Button fx:id="puerto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#conectarEstacion" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="2">
                      <graphic>
                         <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -171,19 +171,19 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label fx:id="fecha" alignment="CENTER_RIGHT" prefHeight="102.0" prefWidth="222.0" styleClass="tiempo" text="25/01/2021" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS">
+            <Label fx:id="fecha" alignment="CENTER" prefHeight="59.0" prefWidth="282.0" styleClass="tiempo" text="25/01/2021" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS">
                <font>
                   <Font size="41.0" />
                </font>
             </Label>
-            <Label fx:id="hora" alignment="CENTER" prefHeight="59.0" prefWidth="223.0" styleClass="tiempo" text="00:00:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+            <Label fx:id="hora" alignment="CENTER" prefHeight="59.0" prefWidth="346.0" styleClass="tiempo" text="00:00:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
                <font>
                   <Font size="41.0" />
                </font>
             </Label>
-              <Label fx:id="ficheroLabel" alignment="CENTER" minHeight="16" minWidth="69" prefHeight="62.0" prefWidth="219.0" styleClass="archivo" textAlignment="CENTER" GridPane.hgrow="ALWAYS">
+              <Label fx:id="ficheroLabel" alignment="CENTER" minHeight="16" minWidth="69" prefHeight="57.0" prefWidth="339.0" styleClass="archivo" textAlignment="CENTER" GridPane.hgrow="ALWAYS">
                <font>
-                  <Font size="20.0" />
+                  <Font size="23.0" />
                </font></Label>
          </children>
          <BorderPane.margin>
