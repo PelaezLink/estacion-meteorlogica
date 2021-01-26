@@ -18,21 +18,49 @@ and open the template in the editor.
 }
 
 .temp{
+    -fx-border-color: grey;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 8;
+}
+
+.numTemp{   
     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black; 
     -fx-font-weight: bold;
-    -fx-font-size: 110px;
-    -fx-border-color: grey;
-    -fx-border-width: 0 3 0 0;
+    -fx-font-size: 110px;   
 }
+.nomTemp{
+    -fx-font-family:  "Arial";
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 2 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+
 
 .presion{
-    -fx-font-family:  "DS-Digital";
+    -fx-border-color: grey;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 8;
+}
+.numPresion{
+     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 70px;
-
+    -fx-font-size: 60px;  
 }
+
+.nomPresion{
+    -fx-font-family:  "Arial";
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 2 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+
+
 
 .tiempo{
     -fx-font-family:  "DS-Digital";
@@ -40,33 +68,70 @@ and open the template in the editor.
     -fx-font-weight: bold;
     -fx-font-size: 45px;
     -fx-border-color: grey;
-    -fx-border-width: 0 0 3 0; 
+    -fx-border-width: 0 0 2 0; 
 }
+
+
+
 
 .direccion{  
+    -fx-border-color: grey;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 8;
+}
+.numDireccion{
     -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 90px;
-    -fx-border-color: grey;
-    -fx-border-width: 3 3 0 0;
+    -fx-font-size: 90px;  
 }
 
+.nomDireccion{
+    -fx-font-family:  "Arial";
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 2 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;    
+}
+
+
+
+
 .velocidad{
-    -fx-font-family:  "DS-Digital";
+    -fx-border-color: grey;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 8;
+}
+
+.numVelocidad{
+        -fx-font-family:  "DS-Digital";
     -fx-text-fill: black;
     -fx-font-weight: bold;
-    -fx-font-size: 90px;
-    -fx-border-color: grey;
-    -fx-border-width: 3 0 0 0;
+    -fx-font-size: 90px;   
 }
+.nomVelocidad{   
+    -fx-font-family:  "Arial";
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 2 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;    
+}
+
+
 
 .archivo{      
     -fx-border-color: grey;
-    -fx-border-width: 0 0 3 0;
+    -fx-border-width: 0 0 2 0;
 }
 
+.botones{
+    -fx-text-transform: uppercase;
+    -fx-background-color: transparent;
+  }
+.botones:hover{
+    -fx-background-color: #E5E7E9;
+}
 
+.paneFondo{
 
-
-
+}
