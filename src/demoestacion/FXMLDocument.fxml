@@ -133,9 +133,9 @@
                   </Button>
                   <Button fx:id="modo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cambiarModo" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="3">
                      <graphic>
-                        <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imagenLuz" fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../imagenes/sol.png" />
+                              <Image url="@../imagenes/luna.png" />
                            </image>
                         </ImageView>
                      </graphic>

@@ -92,6 +92,10 @@ public class FXMLDocumentController implements Initializable {
     private Node hijosCentroDos;
     @FXML
     private ImageView imagenBoton;
+    private boolean modoDia;
+    @FXML
+    private ImageView imagenLuz;
+    
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -129,6 +133,7 @@ public class FXMLDocumentController implements Initializable {
         fecha.setText(LocalDate.now().toString());
         escenario.getStylesheets().add("/demoestacion/estilosDia.css");
         modoGrafica = false;
+        modoDia = true;
 
         //Codigo para hacer el reloj que se actualiza:
         //Fuente: https://stackoverflow.com/questions/38566638/javafx-displaying-time-and-refresh-in-every-second/38567319
@@ -222,10 +227,23 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void cambiarModo(ActionEvent event) {
-        
+
+        if (modoDia) {
+            escenario.getStylesheets().clear();
+            escenario.getStylesheets().add("/demoestacion/estilosNoche.css");
+            Image imagen = new Image("/imagenes/sol.png");
+            imagenLuz.setImage(imagen);
+        }
+        else{
+            escenario.getStylesheets().clear();
+            escenario.getStylesheets().add("/demoestacion/estilosDia.css");
+            Image imagen = new Image("/imagenes/luna.png");
+            imagenLuz.setImage(imagen);
+        }
+        modoDia = !modoDia;
+
     }
-    
-    
-    
+
+
 
 }
