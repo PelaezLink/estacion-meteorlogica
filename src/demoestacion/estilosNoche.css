@@ -142,7 +142,7 @@ and open the template in the editor.
     -fx-background-color: #626567;
   }
 .botones:hover{
-    -fx-background-color: #ffffff;
+    -fx-background-color: #D7DBDD;
 }
 
 .paneFondo{
@@ -153,16 +153,18 @@ and open the template in the editor.
     -fx-font-family:  "Arial";
     -fx-font-weight: bold;
     -fx-font-size: 13px;   
+    -fx-text-fill: #E5E8E8;
 }
 
 .intervalo{
+    -fx-text-fill: #E5E8E8;
     -fx-font-family:  "Arial";
     -fx-font-weight: bold;
     -fx-font-size: 15px;      
 }
 
 .grafica{
-    -fx-background-color: white;
+    -fx-background-color: #797D7F;
     -fx-background-radius: 8;
     
 }
