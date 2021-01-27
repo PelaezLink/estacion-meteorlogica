@@ -72,7 +72,7 @@ and open the template in the editor.
 
 .tiempo{
     -fx-font-family:  "DS-Digital";
-    -fx-text-fill: black;
+    -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-size: 50px;
 
@@ -86,7 +86,7 @@ and open the template in the editor.
 }
 .numDireccion{
     -fx-font-family:  "DS-Digital";
-    -fx-text-fill: black;
+    -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-size: 90px;  
     -fx-background-radius: 5;
@@ -95,6 +95,7 @@ and open the template in the editor.
 
 .nomDireccion{
     -fx-font-family:  "Arial";
+    -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-size: 15px;   
     -fx-background-radius: 5;
@@ -143,7 +144,7 @@ and open the template in the editor.
 }
 
 .paneFondo{
-    -fx-background-color: #EBF5FB;
+    -fx-background-color: black;
     
 }
 .ejes{
@@ -160,5 +161,6 @@ and open the template in the editor.
 
 .grafica{
     -fx-background-color: white;
-    -fx-background-radius: 8;    
+    -fx-background-radius: 8;
+    
 }

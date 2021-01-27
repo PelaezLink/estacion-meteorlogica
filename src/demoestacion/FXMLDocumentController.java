@@ -220,4 +220,12 @@ public class FXMLDocumentController implements Initializable {
         modoGrafica = true;
     }
 
+    @FXML
+    private void cambiarModo(ActionEvent event) {
+        
+    }
+    
+    
+    
+
 }
