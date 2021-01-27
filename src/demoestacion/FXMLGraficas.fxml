@@ -8,14 +8,14 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="712.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoestacion.FXMLGraficasController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="689.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demoestacion.FXMLGraficasController">
    <children>
-      <LineChart fx:id="TWDGrafica" animated="false" createSymbols="false" styleClass="grafica" stylesheets="@estilosDia.css" title="TWD">
+      <LineChart fx:id="TWDGrafica" animated="false" createSymbols="false" styleClass="grafica" title="TWD">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
         <yAxis>
-          <NumberAxis label="Dirección ( º)" prefHeight="125.0" prefWidth="49.0" side="LEFT" styleClass="ejes" stylesheets="@estilosDia.css" />
+          <NumberAxis label="Dirección ( º)" prefHeight="125.0" prefWidth="49.0" side="LEFT" styleClass="ejes" />
         </yAxis>
          <opaqueInsets>
             <Insets right="10.0" />
@@ -24,12 +24,12 @@
             <Insets left="10.0" top="10.0" />
          </VBox.margin>
       </LineChart>
-      <LineChart fx:id="TWSGrafica" animated="false" createSymbols="false" styleClass="grafica" stylesheets="@estilosDia.css" title="TWS">
+      <LineChart fx:id="TWSGrafica" animated="false" createSymbols="false" styleClass="grafica" title="TWS">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
         <yAxis>
-          <NumberAxis label="Velocidad (kn)" prefHeight="126.0" prefWidth="49.0" side="LEFT" styleClass="ejes" stylesheets="@estilosDia.css" />
+          <NumberAxis label="Velocidad (kn)" prefHeight="126.0" prefWidth="49.0" side="LEFT" styleClass="ejes" />
         </yAxis>
          <opaqueInsets>
             <Insets right="10.0" />
@@ -38,7 +38,7 @@
             <Insets left="10.0" />
          </VBox.margin>
       </LineChart>
-      <Label contentDisplay="CENTER" styleClass="intervalo" stylesheets="@estilosDia.css" text="Intervalo (min)" textAlignment="CENTER">
+      <Label contentDisplay="CENTER" styleClass="intervalo" text="Intervalo (min)" textAlignment="CENTER">
          <opaqueInsets>
             <Insets right="10.0" />
          </opaqueInsets>

@@ -25,11 +25,11 @@ and open the template in the editor.
 
 .numTemp{   
     -fx-font-family:  "DS-Digital";
-    -fx-text-fill: black; 
+    -fx-text-fill: white; 
     -fx-font-weight: bold;
     -fx-font-size: 140px;
     -fx-background-radius: 5;
-    -fx-background-color: linear-gradient(#acf3ff, #ffffff);
+    -fx-background-color: linear-gradient(#000000, #ffffff);
 
 }
 .nomTemp{
@@ -38,8 +38,8 @@ and open the template in the editor.
     -fx-border-width: 0 0 0 0;
     -fx-font-weight: bold;
     -fx-font-size: 15px;
-    -fx-font-color: #000000;
-    -fx-background-color: #ffffff;
+    -fx-text-fill: #E5E8E8;
+    -fx-background-color: #626567;
     -fx-background-radius: 5;
 }
 
@@ -54,7 +54,7 @@ and open the template in the editor.
     -fx-font-weight: bold;
     -fx-font-size: 100px; 
     -fx-background-radius: 5;
-    -fx-background-color: linear-gradient(#a4ff6b, #ffffff);
+    -fx-background-color: linear-gradient(#424949, #ffffff);
 }
 
 .nomPresion{
@@ -64,7 +64,8 @@ and open the template in the editor.
     -fx-font-weight: bold;
     -fx-font-size: 15px;
     -fx-background-radius: 5;
-    -fx-background-color: #ffffff;
+    -fx-background-color: #626567;
+    -fx-text-fill: #E5E8E8;
 }
 
 
@@ -72,7 +73,7 @@ and open the template in the editor.
 
 .tiempo{
     -fx-font-family:  "DS-Digital";
-    -fx-text-fill: white;
+    -fx-text-fill: #E5E8E8;
     -fx-font-weight: bold;
     -fx-font-size: 50px;
 
@@ -86,20 +87,20 @@ and open the template in the editor.
 }
 .numDireccion{
     -fx-font-family:  "DS-Digital";
-    -fx-text-fill: white;
+    -fx-text-fill: black;
     -fx-font-weight: bold;
     -fx-font-size: 90px;  
     -fx-background-radius: 5;
-    -fx-background-color: linear-gradient(#fff300, #ffffff);
+    -fx-background-color: linear-gradient(#424949, #ffffff);
 }
 
 .nomDireccion{
     -fx-font-family:  "Arial";
-    -fx-text-fill: white;
+    -fx-text-fill: #E5E8E8;
     -fx-font-weight: bold;
     -fx-font-size: 15px;   
     -fx-background-radius: 5;
-    -fx-background-color: #ffffff;
+    -fx-background-color: #626567;
 }
 
 
@@ -116,35 +117,36 @@ and open the template in the editor.
     -fx-font-size: 110px;
     
     -fx-background-radius: 5;
-    -fx-background-color: linear-gradient(#ff3d3d, #ffffff);
+    -fx-background-color: linear-gradient(#424949, #ffffff);
 }
 .nomVelocidad{   
     -fx-font-family:  "Arial";
+    -fx-text-fill: #E5E8E8;
     -fx-border-color: grey;
     -fx-border-width: 0 0 0 0;
     -fx-font-weight: bold;
     -fx-font-size: 15px;   
     -fx-background-radius: 5;
-    -fx-background-color: #ffffff;
+    -fx-background-color: #626567;
 
 }
 
 
 
 .archivo{      
-
+    -fx-text-fill: #E5E8E8;
 }
 
 .botones{
     -fx-text-transform: uppercase;
-    -fx-background-color: transparent;
+    -fx-background-color: #626567;
   }
 .botones:hover{
     -fx-background-color: #ffffff;
 }
 
 .paneFondo{
-    -fx-background-color: black;
+    -fx-background-color: #212F3C;
     
 }
 .ejes{

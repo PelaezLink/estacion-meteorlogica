@@ -19,23 +19,23 @@
          <children>
             <HBox alignment="TOP_CENTER" prefHeight="275.0" prefWidth="586.0" spacing="5.0" VBox.vgrow="ALWAYS">
                <children>
-                  <VBox prefHeight="219.0" prefWidth="507.0" styleClass="temp" stylesheets="@estilosDia.css">
+                  <VBox prefHeight="219.0" prefWidth="507.0" styleClass="temp">
                      <children>
-                        <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="463.0" styleClass="nomTemp" stylesheets="@estilosDia.css" text="TEMPERATURA" />
-                        <Label fx:id="tempLabel" alignment="CENTER" prefHeight="197.0" prefWidth="431.0" styleClass="numTemp" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
+                        <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="463.0" styleClass="nomTemp" text="TEMPERATURA" />
+                        <Label fx:id="tempLabel" alignment="CENTER" prefHeight="197.0" prefWidth="431.0" styleClass="numTemp" text="---º" textFill="#4f0fee">
                            <font>
                               <Font size="100.0" />
                            </font>
                         </Label>
                      </children>
                   </VBox>
-                  <VBox styleClass="direccion" stylesheets="@estilosDia.css">
+                  <VBox styleClass="direccion">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                      <children>
                         <Label alignment="CENTER" prefHeight="17.0" prefWidth="311.0" styleClass="nomDireccion" text="TWD" />
-                        <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="247.0" styleClass="numDireccion" stylesheets="@estilosDia.css" text="---º" textFill="#4f0fee">
+                        <Label fx:id="twdLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="247.0" styleClass="numDireccion" text="---º" textFill="#4f0fee">
                            <font>
                               <Font size="65.0" />
                            </font>
@@ -49,10 +49,10 @@
             </HBox>
             <HBox prefHeight="221.0" prefWidth="586.0" VBox.vgrow="ALWAYS">
                <children>
-                  <VBox styleClass="presion" stylesheets="@estilosDia.css" HBox.hgrow="ALWAYS">
+                  <VBox styleClass="presion" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="364.0" styleClass="nomPresion" stylesheets="@estilosDia.css" text="PRESION BAROMETRICA" />
-                        <Label fx:id="presionLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="158.0" prefWidth="279.0" styleClass="numPresion" stylesheets="@estilosDia.css" text="---" textFill="#4f0fee">
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="364.0" styleClass="nomPresion" text="PRESION BAROMETRICA" />
+                        <Label fx:id="presionLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="158.0" prefWidth="279.0" styleClass="numPresion" text="---" textFill="#4f0fee">
                            <font>
                               <Font size="48.0" />
                            </font>
@@ -62,13 +62,13 @@
                         <Insets right="5.0" top="5.0" />
                      </HBox.margin>
                   </VBox>
-                  <VBox styleClass="velocidad" stylesheets="@estilosDia.css">
+                  <VBox styleClass="velocidad">
                      <HBox.margin>
                         <Insets top="5.0" />
                      </HBox.margin>
                      <children>
-                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="304.0" styleClass="nomVelocidad" stylesheets="@estilosDia.css" text="TWS" />
-                        <Label fx:id="twsLabel" alignment="CENTER" prefHeight="159.0" prefWidth="304.0" styleClass="numVelocidad" stylesheets="@estilosDia.css" text="--.-- Kn" textFill="#4f0fee">
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="304.0" styleClass="nomVelocidad" text="TWS" />
+                        <Label fx:id="twsLabel" alignment="CENTER" prefHeight="159.0" prefWidth="304.0" styleClass="numVelocidad" text="--.-- Kn" textFill="#4f0fee">
                            <font>
                               <Font size="65.0" />
                            </font>
@@ -104,7 +104,7 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="cargar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cargarFichero" styleClass="botones" stylesheets="@estilosDia.css">
+                  <Button fx:id="cargar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cargarFichero" styleClass="botones">
                      <graphic>
                         <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -113,7 +113,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="graficas" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#abrirGraficas" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="1">
+                  <Button fx:id="graficas" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#abrirGraficas" styleClass="botones" GridPane.rowIndex="1">
                      <graphic>
                         <ImageView fx:id="imagenBoton" fitHeight="46.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -122,7 +122,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="puerto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#conectarEstacion" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="2">
+                  <Button fx:id="puerto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#conectarEstacion" styleClass="botones" GridPane.rowIndex="2">
                      <graphic>
                         <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -131,7 +131,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="modo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cambiarModo" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="3">
+                  <Button fx:id="modo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cambiarModo" styleClass="botones" GridPane.rowIndex="3">
                      <graphic>
                         <ImageView fx:id="imagenLuz" fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -140,7 +140,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="apagar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#apagarApp" styleClass="botones" stylesheets="@estilosDia.css" GridPane.rowIndex="4">
+                  <Button fx:id="apagar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#apagarApp" styleClass="botones" GridPane.rowIndex="4">
                      <graphic>
                         <ImageView fitHeight="42.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
