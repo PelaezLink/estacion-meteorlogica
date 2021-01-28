@@ -45,7 +45,7 @@
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin></Label>
-      <Slider fx:id="slider" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" min="5.0" minorTickCount="0" prefHeight="159.0" prefWidth="733.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0">
+      <Slider fx:id="slider" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" min="5.0" minorTickCount="0" prefHeight="159.0" prefWidth="733.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="minutos" value="5.0">
          <VBox.margin>
             <Insets bottom="10.0" left="15.0" right="10.0" />
          </VBox.margin>

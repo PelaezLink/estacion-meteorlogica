@@ -151,14 +151,14 @@ and open the template in the editor.
 }
 .ejes{
     -fx-font-family:  "Arial";
-    -fx-font-weight: bold;
     -fx-font-size: 13px;   
-    -fx-text-fill: #E5E8E8;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
 }
 
 .intervalo{
     -fx-text-fill: #E5E8E8;
-    -fx-font-family:  "Arial";
+    -fx-font-family: "Arial";
     -fx-font-weight: bold;
     -fx-font-size: 15px;      
 }
@@ -167,4 +167,9 @@ and open the template in the editor.
     -fx-background-color: #797D7F;
     -fx-background-radius: 8;
     
+}
+
+.minutos{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
 }

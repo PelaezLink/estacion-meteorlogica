@@ -239,7 +239,7 @@ public class FXMLDocumentController implements Initializable {
             escenario.getStylesheets().add("/demoestacion/estilosDia.css");
             Image imagen = new Image("/imagenes/luna.png");
             imagenLuz.setImage(imagen);
-        }
+        }   
         modoDia = !modoDia;
 
     }
